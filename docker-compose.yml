@@ -1,12 +1,12 @@
 version: "3"
 services:
-    mongo:
+    mongo_heimdall:
       container_name: mongo_heimdall
       image: mongo:3.6
       environment:
         MONGO_INITDB_ROOT_USERNAME: admin
         MONGO_INITDB_ROOT_PASSWORD: admin
-    redis:
+    redis_heimdall:
       container_name: redis_heimdall
       image: redis:alpine
     rabbitmq:
